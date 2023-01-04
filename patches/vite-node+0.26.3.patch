@@ -1,0 +1,16 @@
+See https://github.com/vitest-dev/vitest/issues/2606
+and https://github.com/vitejs/vite/issues/11552
+
+diff --git a/node_modules/vite-node/package.json b/node_modules/vite-node/package.json
+index cf3eb5a..cb34074 100644
+--- a/node_modules/vite-node/package.json
++++ b/node_modules/vite-node/package.json
+@@ -88,5 +88,6 @@
+     "build": "rimraf dist && rollup -c",
+     "dev": "rollup -c --watch --watch.include 'src/**' -m inline",
+     "typecheck": "tsc --noEmit"
+-  }
++  },
++  "type": "module"
+ }
+\ No newline at end of file
